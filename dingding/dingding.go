@@ -9,7 +9,7 @@ import (
 )
 
 func buildMessage(msg message.Message) string {
-	str := fmt.Sprintf("### %s\n", msg.DailyTitle)
+	str := fmt.Sprintf("## %s\n", msg.DailyTitle)
 	for _, v := range msg.TextUrls {
 		if len(v.Url) == 0 || len(v.Text) == 0 {
 			continue
@@ -25,12 +25,12 @@ func buildMessage(msg message.Message) string {
 		str += fmt.Sprintf("- [%s](%s)\n", v.Text, v.Url)
 	}
 
-	str += fmt.Sprintf("\n归档：%s\n", "")
+	str += fmt.Sprintf("\n### gitlab归档地址: [点我](%s)\n", "http://gitlab.ling.ai:10080/base/lingpub/golang/golang-learn/blob/master/golang-daily.md")
 	return str
 }
 
 func Send() {
-	token := ""
+	token := "42fee41adb65f8d60fd080c04f202274b5d9b6c0a2cf7b1810469143a3c354c0"
 	ding := Ding{AccessToken: token}
 
 	for {

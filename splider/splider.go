@@ -62,7 +62,7 @@ func init() {
 
 	c.Limit(&colly.LimitRule{
 		DomainGlob:  "gocn.vip",
-		Parallelism: 5,
-		Delay:       3 * time.Second,
+		Parallelism: 10,
+		Delay:       1 * time.Second,
 	})
 }

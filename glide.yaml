@@ -1,4 +1,0 @@
-package: github.com/georgehao/gocn
-import:
-- package: github.com/gocolly/colly
-  version: ^1.0.0

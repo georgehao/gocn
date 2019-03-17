@@ -1,0 +1,8 @@
+dingding:
+  token: <your dingding robot token>
+
+splider:
+  parallelism: 5
+  delay: 5 #s
+  all: false # 第一次抓取全部的时候true
+

@@ -2,42 +2,53 @@ package dingding
 
 import (
 	"fmt"
-	"github.com/georgehao/gocn/db"
-	"github.com/georgehao/gocn/message"
+	"gocn/config"
+	"gocn/db"
+	"gocn/message"
 	"strings"
 	"time"
 )
 
 func buildMessage(msg message.Message) string {
-	str := fmt.Sprintf("## %s\n", msg.DailyTitle)
+	str := fmt.Sprintf("## %s", msg.DailyTitle)
+	str += fmt.Sprintln()
 	for _, v := range msg.TextUrls {
 		if len(v.Url) == 0 || len(v.Text) == 0 {
 			continue
 		}
 
-		if strings.Contains(v.Text, "招聘") ||
-			strings.Contains(v.Text, "Gopher meetup") ||
-			strings.Contains(v.Text, "Gopher Meetup") ||
-			strings.Contains(v.Text, "GoCN归档") ||
-			strings.Contains(v.Text, "订阅新闻") {
+		if strings.Contains(v.Text, "GoCN归档") || strings.Contains(v.Text, "订阅新闻") {
 			continue
 		}
-		str += fmt.Sprintf("- [%s](%s)\n", v.Text, v.Url)
+
+		textValue := strings.Replace(v.Text, "\n", "", -1)
+		realText := strings.Replace(textValue, " ", "", -1)
+
+		str += fmt.Sprintf("- [%s](%s)", realText, v.Url)
+		str += fmt.Sprintln()
 	}
 
-	str += fmt.Sprintf("\n### gitlab归档地址: [点我](%s)\n", "http://gitlab.ling.ai:10080/base/lingpub/golang/golang-learn/blob/master/golang-daily.md")
+	index := strings.Index(msg.Author, "订阅新闻")
+	author := msg.Author
+	if index > 0 {
+		author = msg.Author[:index]
+	}
+
+	str += fmt.Sprintln()
+	str += fmt.Sprintf("编辑：%s", author)
+	str += fmt.Sprintln()
+	str += fmt.Sprintln()
+	str += fmt.Sprintf("原文地址: %s", msg.PostUrl)
 	return str
 }
 
 func Send() {
-	token := "42fee41adb65f8d60fd080c04f202274b5d9b6c0a2cf7b1810469143a3c354c0"
-	ding := Ding{AccessToken: token}
+	ding := Ding{AccessToken: config.Config.GetString("dingding.token")}
 
 	for {
 		msg, err := message.Pop()
 		if err != nil {
 			continue
-			time.Sleep(time.Second * 10)
 		}
 
 		if !db.CheckSend(msg.DailyTitle) {

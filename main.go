@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/georgehao/gocn/db"
-	"github.com/georgehao/gocn/dingding"
-	"github.com/georgehao/gocn/splider"
+	"gocn/db"
+	"gocn/dingding"
+	"gocn/splider"
 	"time"
 )
 
@@ -13,5 +13,9 @@ func main() {
 
 	splider.Run()
 
+	// 当使用定时任务启动时，使用这里，等待输入写入文件完成
 	time.Sleep(time.Minute * 1)
+
+	// 当成常驻进程启动是，把这里打开
+	// select {}
 }

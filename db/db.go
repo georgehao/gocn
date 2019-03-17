@@ -79,10 +79,14 @@ func init() {
 		panic(err.Error())
 	}
 
-	markdownFd, err = os.OpenFile("./golang-daily.md", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0644)
+	markdownFd, err = os.OpenFile("./daily/golang-daily.md", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0644)
 	if err != nil {
 		panic(err.Error())
 	}
+
+	msg := "# 声明：以下这些文章都是通过gocn爬虫从gocn.vip上爬取，只能作为学习使用，不得用于其他用途。有关资源的正确获取途径， 请访问[每日新闻](https://gocn.vip/explore/category-14). 感谢GoCN每日新闻小组的每个人"
+	fmt.Fprintln(markdownFd, "\n"+msg)
+	markdownFd.Sync()
 
 	read()
 }

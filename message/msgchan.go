@@ -2,6 +2,7 @@ package message
 
 import "errors"
 
+// TextUrl 每日新闻内容
 type TextUrl struct {
 	Text string
 	Url  string
@@ -10,6 +11,8 @@ type TextUrl struct {
 type Message struct {
 	TextUrls   []TextUrl
 	DailyTitle string
+	Author     string // 编辑
+	PostUrl    string // 原文地址
 }
 
 var messageChain chan Message
@@ -25,7 +28,6 @@ func Pop() (Message, error) {
 	default:
 		return Message{}, errors.New("nil")
 	}
-	return Message{}, errors.New("error")
 }
 
 func init() {

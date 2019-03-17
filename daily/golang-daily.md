@@ -6859,5 +6859,3 @@ GoCN归档: https://gocn.io/question/1749
 编辑：
 
 原文地址: https://gocn.vip/question/739
-
-# 声明：以下这些文章都是通过gocn爬虫从gocn.vip上爬取，只能作为学习使用，不得用于其他用途。有关资源的正确获取途径， 请访问[每日新闻](https://gocn.vip/explore/category-14). 感谢GoCN每日新闻小组的每个人

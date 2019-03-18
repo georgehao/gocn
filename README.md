@@ -34,10 +34,13 @@
 
 程序会判读当前页是否有下一页，如果有下一页会自动跳转到下一页进行爬取
 
-### main里面为什么会采用goroutine来启动db, splider?
+### 如何启动
 
-主要考虑，有可能会采用常驻进程的方式进行启动程序，才这么写的. 所以本程序也可以使用`crontab`方式启动
+本程序也可以使用`crontab`方式启动，程序内没有封装定时任务的程序
 
 ## 有关具体的爬取内容
 
 目前的内容不定时通过手动push到了[daily](./daily/golang-daily.md)
+
+
+![](http://images.haohongfan.com/dingdinggocn.png)

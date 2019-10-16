@@ -77,9 +77,18 @@ func Run() {
 			})
 		})
 
+		var newTextUrls []message.TextUrl
+		uniMap := make(map[string]bool)
+		for _, v := range textUrls {
+			if _, ok := uniMap[v.Url]; !ok {
+				uniMap[v.Url] = true
+				newTextUrls = append(newTextUrls, v)
+			}
+		}
+
 		message.Push(message.Message{
 			DailyTitle: dailyTitle,
-			TextUrls:   textUrls,
+			TextUrls:   newTextUrls,
 			Author:     author,
 			PostUrl:    e.Request.URL.String(),
 		})

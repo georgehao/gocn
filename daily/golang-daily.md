@@ -6859,3 +6859,131 @@ GoCN归档: https://gocn.io/question/1749
 编辑：
 
 原文地址: https://gocn.vip/question/739
+## GoCN每日新闻(2019-09-25)
+
+编辑： 周云轩* 
+
+原文地址: https://gocn.vip/question/6042
+
+## GoCN每日新闻(2019-10-15)
+- [1.GoModule存在的意义与解决的问题](https://www.ardanlabs.com/blog/2019/10/modules-01-why-and-what.html)
+- [2.理解Go指针](https://www.digitalocean.com/community/conceptual_articles/understanding-pointers-in-go)
+- [3.DaveCheney的Go实践总结图示](https://skarlso.github.io/2019/10/10/practical-go-summary/)
+- [4.Go有GC就不需要掌握内存堆栈知识了吗？Go堆栈的理解](https://mp.weixin.qq.com/s/SGbiWLW6pLfd32TKIil10A)
+- [5.高性能Go网络库gnet发布v1版](https://segmentfault.com/a/1190000020689928)
+- [1.GoModule存在的意义与解决的问题](https://www.ardanlabs.com/blog/2019/10/modules-01-why-and-what.html)
+- [2.理解Go指针](https://www.digitalocean.com/community/conceptual_articles/understanding-pointers-in-go)
+- [3.DaveCheney的Go实践总结图示](https://skarlso.github.io/2019/10/10/practical-go-summary/)
+- [4.Go有GC就不需要掌握内存堆栈知识了吗？Go堆栈的理解](https://mp.weixin.qq.com/s/SGbiWLW6pLfd32TKIil10A)
+- [5.高性能Go网络库gnet发布v1版](https://segmentfault.com/a/1190000020689928)
+
+编辑： 傅小黑
+
+原文地址: https://gocn.vip/question/6429
+
+## GoCN每日新闻(2019-10-13)
+
+编辑： 罗发宣- 
+
+原文地址: https://gocn.vip/question/6426
+
+## GoCN每日新闻(2019-10-14)
+- [2.[译]UberGo语言代码风格指南](https://mp.weixin.qq.com/s/cu6IZl_BhWokJxMXYmSytg)
+- [3.实现Go语言解释器](http://notes.eatonphil.com/interpreting-go.html)
+- [4.dt：Go缺失的日期时间包](https://medium.com/@ribice/dt-gos-missing-datetime-package-b9c5041398d0)
+- [5.学术论文：大规模Go语言单元测试](https://www.academia.edu/40301628/Large_Scale_Unit_Testing_for_Go_Programming_Language_Packages)
+- [1.基于Go开源项目MIMIO的对象存储方案在探探的实践](https://mp.weixin.qq.com/s/YIKB_qAqqy6ydtFT_a_Ieg)
+- [2.[译]UberGo语言代码风格指南](https://mp.weixin.qq.com/s/cu6IZl_BhWokJxMXYmSytg)
+- [3.实现Go语言解释器](http://notes.eatonphil.com/interpreting-go.html)
+- [4.dt：Go缺失的日期时间包](https://medium.com/@ribice/dt-gos-missing-datetime-package-b9c5041398d0)
+- [5.学术论文：大规模Go语言单元测试](https://www.academia.edu/40301628/Large_Scale_Unit_Testing_for_Go_Programming_Language_Packages)
+- [*活动推荐：GoHack2019火热招募中！](http://gohack2019.sxl.cn/)
+
+编辑： 李俱顺Kevin
+
+原文地址: https://gocn.vip/question/6427
+
+## GoCN每日新闻(2019-10-12)
+
+编辑： samurai 
+
+原文地址: https://gocn.vip/question/6417
+
+## GoCN每日新闻(2019-10-16)
+- [1.持续的性能分析与优化](https://medium.com/@tvii/continuous-profiling-and-go-6c0ab4d2504b)
+- [2.理解Go中的defer](https://www.digitalocean.com/community/tutorials/understanding-defer-in-go)
+- [3.Go语言反射的实现原理](https://draveness.me/golang/basic/golang-reflect.html)
+- [4.如何构建一个云原生框架](https://medium.com/@yannick.b/how-should-be-built-the-ideal-cloud-native-framework-part-2-2fcfa38c9de7)
+- [5.pigo-人脸识别库](https://www.reddit.com/r/golang/comments/di3n1k/the_pigo_face_detection_library_now_is_capable/)
+
+编辑： yulibaozi
+
+原文地址: https://gocn.vip/question/6432
+
+## GoCN每日新闻(2019-10-16)
+- [1.持续的性能分析与优化](https://medium.com/@tvii/continuous-profiling-and-go-6c0ab4d2504b)
+- [2.理解Go中的defer](https://www.digitalocean.com/community/tutorials/understanding-defer-in-go)
+- [3.Go语言反射的实现原理](https://draveness.me/golang/basic/golang-reflect.html)
+- [4.如何构建一个云原生框架](https://medium.com/@yannick.b/how-should-be-built-the-ideal-cloud-native-framework-part-2-2fcfa38c9de7)
+- [5.pigo-人脸识别库](https://www.reddit.com/r/golang/comments/di3n1k/the_pigo_face_detection_library_now_is_capable/)
+
+编辑： yulibaozi
+
+原文地址: https://gocn.vip/question/6432
+
+## GoCN每日新闻(2019-10-15)
+- [1.GoModule存在的意义与解决的问题](https://www.ardanlabs.com/blog/2019/10/modules-01-why-and-what.html)
+- [2.理解Go指针](https://www.digitalocean.com/community/conceptual_articles/understanding-pointers-in-go)
+- [3.DaveCheney的Go实践总结图示](https://skarlso.github.io/2019/10/10/practical-go-summary/)
+- [4.Go有GC就不需要掌握内存堆栈知识了吗？Go堆栈的理解](https://mp.weixin.qq.com/s/SGbiWLW6pLfd32TKIil10A)
+- [5.高性能Go网络库gnet发布v1版](https://segmentfault.com/a/1190000020689928)
+
+编辑： 傅小黑
+
+原文地址: https://gocn.vip/question/6429
+
+## GoCN每日新闻(2019-10-13)
+
+编辑： 罗发宣- 
+
+原文地址: https://gocn.vip/question/6426
+
+## GoCN每日新闻(2019-10-14)
+- [1.基于Go开源项目MIMIO的对象存储方案在探探的实践](https://mp.weixin.qq.com/s/YIKB_qAqqy6ydtFT_a_Ieg)
+- [2.[译]UberGo语言代码风格指南](https://mp.weixin.qq.com/s/cu6IZl_BhWokJxMXYmSytg)
+- [3.实现Go语言解释器](http://notes.eatonphil.com/interpreting-go.html)
+- [4.dt：Go缺失的日期时间包](https://medium.com/@ribice/dt-gos-missing-datetime-package-b9c5041398d0)
+- [5.学术论文：大规模Go语言单元测试](https://www.academia.edu/40301628/Large_Scale_Unit_Testing_for_Go_Programming_Language_Packages)
+- [*活动推荐：GoHack2019火热招募中！](http://gohack2019.sxl.cn/)
+
+编辑： 李俱顺Kevin
+
+原文地址: https://gocn.vip/question/6427
+
+## GoCN每日新闻(2019-10-12)
+
+编辑： samurai 
+
+原文地址: https://gocn.vip/question/6417
+
+## GoCN每日新闻(2019-10-11)
+- [1. golang 将数据库转换为gorm结构 ](https://studygolang.com/articles/23878)
+- [2. 关于Go的10个你可能不知道的事情 ](https://talks.golang.org/2012/10things.slide#1)
+- [3. Go gRPC 系列五：基于 CA 的 TLS 证书校验 ](https://juejin.im/post/5d9ffc24f265da5b8a516112)
+- [4. Go和Android集成实战 ](http://www.songjiayang.com/posts/go-he-andji-shi-li)
+- [5. 超大规模商用 K8s 场景下，阿里巴巴如何动态解决容器资源的按需分配问题？](https://mp.weixin.qq.com/s/013J6iMJPI9ddICKdr485A)
+
+编辑： 何小云
+
+原文地址: https://gocn.vip/question/6416
+
+## GoCN每日新闻(2019-10-16)
+- [1.持续的性能分析与优化](https://medium.com/@tvii/continuous-profiling-and-go-6c0ab4d2504b)
+- [2.理解Go中的defer](https://www.digitalocean.com/community/tutorials/understanding-defer-in-go)
+- [3.Go语言反射的实现原理](https://draveness.me/golang/basic/golang-reflect.html)
+- [4.如何构建一个云原生框架](https://medium.com/@yannick.b/how-should-be-built-the-ideal-cloud-native-framework-part-2-2fcfa38c9de7)
+- [5.pigo-人脸识别库](https://www.reddit.com/r/golang/comments/di3n1k/the_pigo_face_detection_library_now_is_capable/)
+
+编辑： yulibaozi
+
+原文地址: https://gocn.vip/question/6432

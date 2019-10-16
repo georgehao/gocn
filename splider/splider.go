@@ -30,6 +30,33 @@ func Run() {
 				}
 			})
 
+			// div
+			e.ForEach("div", func(i int, element *colly.HTMLElement) {
+				text := element.Text
+				if text != "" && !strings.Contains(text, "GoCN每日新闻(") {
+					httpIndex := strings.Index(text, "http")
+					if httpIndex <= len(element.Text) && httpIndex != -1 {
+						text := element.Text[0:httpIndex]
+						url := element.Text[httpIndex:]
+						textUrls = append(textUrls, message.TextUrl{text, url})
+					}
+				}
+			})
+
+			// p
+			e.ForEach("p", func(i int, element *colly.HTMLElement) {
+				url := element.ChildText("a[href]")
+				text := element.Text
+				if text != "" && !strings.Contains(text, "GoCN每日新闻(") && !strings.Contains(text, "p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height") {
+					// 处理text带的url
+					urlIndex := strings.Index(text, url)
+					if urlIndex <= len(element.Text) && urlIndex != -1 {
+						text := element.Text[0:urlIndex]
+						textUrls = append(textUrls, message.TextUrl{text, url})
+					}
+				}
+			})
+
 			e.ForEach("*", func(i int, element *colly.HTMLElement) {
 				authorIndex1 := strings.Index(element.Text, "编辑:")
 				authorIndex2 := strings.Index(element.Text, "编辑：")

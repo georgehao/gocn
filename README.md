@@ -42,5 +42,15 @@
 
 目前的内容不定时通过手动push到了[daily](./daily/golang-daily.md)
 
+## 更新
+
+1. 2019-10-16
+
+* 由于gocn更新的原因, 导致以前的抓取失效, 增加抓取方式
+* 增加可以一次推多个机器人的功能
 
 ![](http://images.haohongfan.com/dingdinggocn.png)
+
+## TODO
+
+1. 支持github,

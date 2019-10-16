@@ -1,5 +1,7 @@
 dingding:
-  token: <your dingding robot token>
+  token:
+    - 111111
+    - 222222
 
 splider:
   parallelism: 5

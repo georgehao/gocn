@@ -43,7 +43,11 @@ func buildMessage(msg message.Message) string {
 }
 
 func Send() {
-	ding := Ding{AccessToken: config.Config.GetString("dingding.token")}
+	var sends []Ding
+	tokens := config.Config.GetStringSlice("dingding.token")
+	for _, v := range tokens {
+		sends = append(sends, Ding{AccessToken: v})
+	}
 
 	for {
 		msg, err := message.Pop()
@@ -56,7 +60,9 @@ func Send() {
 			content := buildMessage(msg)
 			db.PushMarkdown(content)
 			markdown := Markdown{Title: "GoCN每日新闻", Content: content}
-			ding.Send(markdown)
+			for _, v := range sends {
+				v.Send(markdown)
+			}
 			time.Sleep(time.Second * 1)
 		}
 	}

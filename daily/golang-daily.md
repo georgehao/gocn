@@ -6987,3 +6987,31 @@ GoCN归档: https://gocn.io/question/1749
 编辑： yulibaozi
 
 原文地址: https://gocn.vip/question/6432
+
+## GoCN每日新闻(2019-10-17)
+
+编辑： 李森森
+
+原文地址: https://gocn.vip/question/6436
+
+## GoCN每日新闻(2019-10-17)
+- [1.通过gomodule管理gotool](https://marcofranssen.nl/manage-go-tools-via-go-modules/)
+- [2.使用go的并发性进行图形计算](https://blog.owulveryck.info/2019/10/14/think-like-a-vertex-using-gos-concurrency-for-graph-computation.html)
+- [3.使用HTTP2ServerPush创建快速且惯用的客户端驱动的RESTAPI](https://github.com/dunglas/vulcain)
+- [4.用Go实现狄克斯特拉算法](https://deployeveryday.com/2019/10/16/dijkstra-algorithm-golang.html)
+- [5.go中使用嵌入式结构的装饰器](https://fabianlindfors.se/blog/decorators-in-go-using-embedded-structs/)
+
+编辑： 李森森
+
+原文地址: https://gocn.vip/question/6436
+
+## GoCN每日新闻(2019-10-17)
+- [1.通过gomodule管理gotool](https://marcofranssen.nl/manage-go-tools-via-go-modules/)
+- [2.使用go的并发性进行图形计算](https://blog.owulveryck.info/2019/10/14/think-like-a-vertex-using-gos-concurrency-for-graph-computation.html)
+- [3.使用HTTP2ServerPush创建快速且惯用的客户端驱动的RESTAPI](https://github.com/dunglas/vulcain)
+- [4.用Go实现狄克斯特拉算法](https://deployeveryday.com/2019/10/16/dijkstra-algorithm-golang.html)
+- [5.go中使用嵌入式结构的装饰器](https://fabianlindfors.se/blog/decorators-in-go-using-embedded-structs/)
+
+编辑： 李森森
+
+原文地址: https://gocn.vip/question/6436

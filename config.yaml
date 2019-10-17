@@ -1,7 +1,7 @@
 dingding:
   token:
-    - 111111
-    - 222222
+    - token1
+    - token2
 
 splider:
   parallelism: 5

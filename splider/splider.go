@@ -47,12 +47,36 @@ func Run() {
 			e.ForEach("p", func(i int, element *colly.HTMLElement) {
 				url := element.ChildText("a[href]")
 				text := element.Text
-				if text != "" && !strings.Contains(text, "GoCN每日新闻(") && !strings.Contains(text, "p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height") {
-					// 处理text带的url
-					urlIndex := strings.Index(text, url)
-					if urlIndex <= len(element.Text) && urlIndex != -1 {
-						text := element.Text[0:urlIndex]
-						textUrls = append(textUrls, message.TextUrl{text, url})
+				if len(text) > 300 && !strings.Contains(text, "p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height") {
+					new1Index := strings.Index(text, "1.")
+					new2Index := strings.Index(text, "2.")
+					news1 := text[new1Index:new2Index]
+					urlTextDeal(news1, &textUrls)
+
+					new3Index := strings.Index(text, "3.")
+					news2 := text[new2Index:new3Index]
+					urlTextDeal(news2, &textUrls)
+
+					new4Index := strings.Index(text, "4.")
+					news3 := text[new3Index:new4Index]
+					urlTextDeal(news3, &textUrls)
+
+					new5Index := strings.Index(text, "5.")
+					news4 := text[new4Index:new5Index]
+					urlTextDeal(news4, &textUrls)
+
+					bianjiIndex := strings.Index(text, "编辑")
+					news5 := text[new5Index:bianjiIndex]
+					urlTextDeal(news5, &textUrls)
+
+				} else {
+					if text != "" && !strings.Contains(text, "GoCN每日新闻(") && !strings.Contains(text, "p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height") {
+						// 处理text带的url
+						urlIndex := strings.Index(text, url)
+						if urlIndex <= len(element.Text) && urlIndex != -1 {
+							text := element.Text[0:urlIndex]
+							textUrls = append(textUrls, message.TextUrl{text, url})
+						}
 					}
 				}
 			})
@@ -129,6 +153,15 @@ func Run() {
 
 	// Start scraping on https://hackerspaces.org
 	_ = c.Visit("https://gocn.vip/explore/category-14")
+}
+
+func urlTextDeal(val string, res *[]message.TextUrl) {
+	httpIndex := strings.Index(val, "http")
+	if httpIndex <= len(val) && httpIndex != -1 {
+		text := val[0:httpIndex]
+		url := val[httpIndex:]
+		*res = append(*res, message.TextUrl{text, url})
+	}
 }
 
 func init() {

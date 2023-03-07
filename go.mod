@@ -3,11 +3,11 @@ module gocn
 go 1.12
 
 require (
+	github.com/BurntSushi/toml v1.2.1 // indirect
 	github.com/PuerkitoBio/goquery v1.4.1 // indirect
 	github.com/andybalholm/cascadia v1.0.0 // indirect
 	github.com/antchfx/htmlquery v0.0.0-20180726134113-496ad84c8a0c // indirect
-	github.com/antchfx/xmlquery v0.0.0-20180726134140-2805f22c26c4 // indirect
-	github.com/antchfx/xpath v0.0.0-20180524052354-077bca4d2caa // indirect
+	github.com/antchfx/xmlquery v1.3.1 // indirect
 	github.com/go-playground/locales v0.12.1 // indirect
 	github.com/go-playground/universal-translator v0.0.0-20170327191703-71201497bace // indirect
 	github.com/gobwas/glob v0.0.0-20180809073612-f756513aec94 // indirect
